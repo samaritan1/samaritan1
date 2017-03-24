@@ -1,0 +1,95 @@
+body {
+
+  background-color:#542672;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+
+
+h1 {
+  color:white;
+  text-align: center;
+  font-size:40px;
+  padding:35px;
+  margin-top:40px;
+  margin-bottom:-40px;
+  font-weight: bold;
+}
+
+
+* {
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons",
+  "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+
+
+#theheat {
+  margin: auto;
+  display: right;
+  width: 30%;
+}
+
+
+#bigmommas {
+  margin: auto;
+  display: left;
+  width:30%;
+  padding:10px;
+
+}
+
+
+.w3-display-container {
+
+padding-top: 55px;
+
+}
+
+
+
+p {
+  color:white;
+  text-align: center;
+  font-size:20px;
+  padding: 60px;
+}
+
+.coolbutton {
+  height: 50px;
+  background:#6D6E71;
+  color:white;
+  padding:10px;
+  text-align:center;
+  font-size:20px;
+
+}
+
+.coolbutton:hover {
+  background:#542672;
+
+}
+
+
+
+p.column {
+  line-height: 2.3;
+}
+
+
+a {
+
+  color:#00cc00;
+
+
+}
+
+.slideshow img {
+  height: 450px;
+}
+
+
+{
+
+
+}

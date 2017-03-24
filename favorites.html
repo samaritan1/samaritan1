@@ -1,0 +1,156 @@
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 coolbutton" style="padding:4px !important">
+      <a href="index.html"><img src="bmlogo.jpg" style="width:33px"></a>
+    </div>
+    <a href="aboutme.html">
+      <div class="col-md-2 coolbutton">About</div></a>
+    <a href="favorites.html">
+      <div class="col-md-2 coolbutton">Favorites</div></a>
+    <a href="education.html">
+      <div class="col-md-2 coolbutton">Education</div></a>
+    <a href="essays.html">
+      <div class="col-md-2 coolbutton">Essays</div></a>
+    <a href="socialmedia.html">
+      <div class="col-md-2 coolbutton">Social Media</div></a>
+
+   </div>
+
+<h1 id='favs'> Favorites </h1>
+
+   <h1 id='favmovies' style="text-align:center;"> Favorite Movies</h1>
+
+
+      <div class="Slideshow w3-content w3-display-container">
+        <img class="mymovies" src="http://whysoblu.com/wp-content/uploads/2013/06/The-HEat-Poster.jpg"
+           style="width:40%; display:block; margin:auto;">
+        <img class="mymovies" src="http://eosfitness.com/wp-content/uploads/2015/03/big-mommas.jpg"
+           style="width:40%; display:block; margin:auto;">
+        <img class="mymovies" src="badboys.jpg"
+           style="width:40%; display:block; margin:auto;">
+
+        <button class="w3-button w3-display-left" onclick="plusDivsMovies(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivsMovies(1)">&#10095;</button>
+      </div>
+
+
+
+      <script>
+      var slideIndex = 1;
+      showDivsMovies(slideIndex);
+
+      function plusDivsMovies(n) {
+        showDivsMovies(slideIndex += n);
+      }
+
+      function showDivsMovies(n) {
+        var i;
+        var x = document.getElementsByClassName("mymovies");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
+
+
+
+
+<h1 id='favshows'style="margin-top:50px;">Favorite TV Shows</h1>
+
+   <div class="w3-content w3-display-container">
+     <img class="myshows" src="http://vignette4.wikia.nocookie.net/house/images/5/59/House_Season_2_Poster.jpg/revision/latest?cb=20110326220413"
+         style="width:345px; display:block; margin:auto;">
+     <img class="myshows" src="greys.jpg"
+         style="width:370px; display:block; margin:auto;">
+     <img class="myshows" src="once.jpg"
+         style="width:365px; display:block; margin:auto;">
+     <img class="myshows" src="designatedsurvivor.jpg"
+         style="width:405px; display:block; margin:auto;">
+     <img class="myshows" src="http://images.amcnetworks.com/amc.com/wp-content/uploads/2010/12/breaking-bad-S5-400x600-compressedV1.jpg"
+         style="width:345px; display:block; margin:auto;">
+     <img class="myshows" src="http://vignette3.wikia.nocookie.net/scrubs/images/b/b4/Season_5_iTunes_Artwork.jpg/revision/latest?cb=20090329210541"
+         style="width:400px; display:block; margin:auto;">
+
+     <button class="w3-button w3-display-left" onclick="plusDivsShows(-1)">&#10094;</button>
+     <button class="w3-button w3-display-right" onclick="plusDivsShows(1)">&#10095;</button>
+    </div>
+
+
+   <script>
+   var slideIndex = 1;
+   showDivsShows(slideIndex);
+
+   function plusDivsShows(n) {
+     showDivsShows(slideIndex += n);
+   }
+
+   function showDivsShows(n) {
+     var i;
+     var x = document.getElementsByClassName("myshows");
+     if (n > x.length) {slideIndex = 1}
+     if (n < 1) {slideIndex = x.length}
+     for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+     }
+     x[slideIndex-1].style.display = "block";
+   }
+   </script>
+
+
+
+
+<!--
+
+   <h1 id='favspics'> Collections </h1> -->
+
+
+
+<!-- <h2 class="w3-center"></h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="favSlid" src="knivescircle.jpg"
+     style="width:60%; display:block; margin:auto;">
+  <img class="favSlid" src="knivesline.jpg"
+     style="width:60%; display:block; margin:auto;">
+  <img class="favSlid" src="knivessix.jpg"
+     style="width:60%;  display:block; margin:auto;">
+</div> -->
+
+
+<!-- <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("favSlid");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 950); // change image every 30 seconds
+}
+</script> -->
+
+
+</body>
+
+</html>

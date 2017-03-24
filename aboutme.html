@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title> aboutme </title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet">
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 coolbutton" style="padding:4px !important">
+        <a href="index.html"><img src="bmlogo.jpg" style="width:33px"></a>
+      </div>
+      <a href="aboutme.html">
+        <div class="col-md-2 coolbutton">About</div></a>
+      <a href="favorites.html">
+        <div class="col-md-2 coolbutton">Favorites</div></a>
+      <a href="education.html">
+        <div class="col-md-2 coolbutton">Education</div></a>
+      <a href="essays.html">
+        <div class="col-md-2 coolbutton">Essays</div></a>
+      <a href="socialmedia.html">
+        <div class="col-md-2 coolbutton">Social Media</div></a>
+
+
+   </div>
+
+<h1 id='aboutme'> About </h1>
+
+
+       <div class="w3-content w3-display-container">
+         <img class="mepics" src="meandgrandma.jpg"
+            style="width:300px; display:block; margin:auto;">
+         <img class="mepics" src="gabrielandme.jpg"
+            style="width:200px; display:block; margin:auto;">
+
+
+         <button class="w3-button w3-display-left" onclick="plusDivsAbout(-1)">&#10094;</button>
+         <button class="w3-button w3-display-right" onclick="plusDivsAbout(1)">&#10095;</button>
+
+</div>
+
+
+       <script>
+       var slideIndex = 1;
+       showDivsAbout(slideIndex);
+
+       function plusDivsAbout(n) {
+         showDivsAbout(slideIndex += n);
+       }
+
+       function showDivsAbout(n) {
+         var i;
+         var x = document.getElementsByClassName("mepics");
+         if (n > x.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = x.length}
+         for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+         }
+         x[slideIndex-1].style.display = "block";
+       }
+       </script>
+
+
+
+  <p>
+    I'm Joseph Hakim, and I attend Magen David Yeshivah High School
+    in Brooklyn, New York. I am a 15 year old who is creative, entrepreneurial
+    and determined. People describe me as ambitious, determined, and lively.
+    My goals are to change the world in a positive way, by leading a team of researches
+    and educators to eradicate certain sickness in the world. There are many good will
+    entrepreneurs who share my vision, by providing me with the resources necessary to
+    achieve my goal.
+</p>
+
+
+
+<h1 id='hobbies'> Hobbies</h1>
+
+
+
+<div class="w3-content w3-display-container">
+  <img class="hobpics" src="appleboxes.jpg"
+     style="width:350px; display:block; margin:auto;">
+  <img class="hobpics" src="ios10logo.jpg"
+     style="width:230px; display:block; margin:auto;">
+     <img class="hobpics" src="https://cdn2.iconfinder.com/data/icons/movie-8/500/chair-512.png"
+     style="width:230px; display:block; margin:auto;">
+  <img class="hobpics" src="medlogo.jpg"
+     style="width:250px; display:block; margin:auto;">
+     <img class="hobpics" src="swift.png"
+        style="width:230px; display:block; margin:auto;">
+        <img class="hobpics" src="scubadiving.jpg"
+           style="width:300px; display:block; margin:auto;">
+
+  <button class="w3-button w3-display-left" onclick="plusDivsHob(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivsHob(1)">&#10095;</button>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showDivsHob(slideIndex);
+
+function plusDivsHob(n) {
+  showDivsHob(slideIndex += n);
+}
+
+function showDivsHob(n) {
+  var i;
+  var x = document.getElementsByClassName("hobpics");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+
+
+<p>
+
+I have a few different hobbies. I'm mainly known to having an
+obsession with Apple products. I save all of the boxes of my Apple
+products, dating back to my first Apple device, the iPhone 5. Along with
+my Apple obsession, I'm also an Apple Developer, and beta test pre-release
+iOS, and macOS software. Besides for technology, I am also an actor/assistant
+director, which I have assistant directed in 2 shows, and acted in 6 shows.
+I am also very interested in the Medical field. Fortunatley, our school had the
+privilege to introduce a Coding Bootcamp, to learn HTML, CSS, and JavaScript.
+I feel that these languages are the beginning of my new hobbie, building apps
+for iOS using Swift.
+
+</p>
